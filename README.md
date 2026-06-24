@@ -26,6 +26,8 @@
 
 This repository contains my personal developer portfolio, completely rebuilt with modern web technologies to be highly interactive, blazing fast, and visually stunning. 
 
+✨ **[Live Preview: yashdeep1546.github.io/Portfolio](https://yashdeep1546.github.io/Portfolio/)** ✨
+
 ### ✨ Key Features
 - **Dynamic 3D Interactions:** Magnetic buttons, tilt-hover cards, and smooth scroll animations.
 - **Particle Backgrounds:** Custom React-Three-Fiber animated backgrounds.
