@@ -26,7 +26,7 @@
 
 I am a Computer Science student with a strong foundation in Generative AI, LLM orchestration, and prompt engineering. Experienced in designing and testing structured prompts, system instructions, and few-shot examples using the Gemini API to build reliable AI agents.
 
-✨ **[Check out my interactive 3D portfolio!](https://yashdeep1546.github.io/Portfolio/)** ✨
+✨ **[Check out my interactive 3D portfolio!](https://portfolio-yashdeep.vercel.app/)** ✨
 
 *(Source Code: [Yashdeep1546/Portfolio](https://github.com/Yashdeep1546/Portfolio))*
 
