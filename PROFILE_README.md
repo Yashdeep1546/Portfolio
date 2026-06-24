@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/assets/avatar/front_cropped.png" alt="Yashdeep Avatar" width="150" />
+  <img src="https://raw.githubusercontent.com/Yashdeep1546/Portfolio/main/public/assets/avatar/front_cropped.png" alt="Yashdeep Avatar" width="150" />
   
   <h1 align="center">Hi, I'm Yashdeep! 👋</h1>
   
@@ -22,15 +22,11 @@
 
 ---
 
-## 🚀 About My Portfolio
+## 🚀 About Me
 
-This repository contains my personal developer portfolio, completely rebuilt with modern web technologies to be highly interactive, blazing fast, and visually stunning. 
+I am a Computer Science student with a strong foundation in Generative AI, LLM orchestration, and prompt engineering. Experienced in designing and testing structured prompts, system instructions, and few-shot examples using the Gemini API to build reliable AI agents.
 
-### ✨ Key Features
-- **Dynamic 3D Interactions:** Magnetic buttons, tilt-hover cards, and smooth scroll animations.
-- **Particle Backgrounds:** Custom React-Three-Fiber animated backgrounds.
-- **Glassmorphism UI:** Premium styling with translucent panels and modern gradients.
-- **Responsive Layout:** Perfectly tailored for desktop, tablet, and mobile.
+Check out my interactive 3D portfolio repository here: [**Yashdeep1546/Portfolio**](https://github.com/Yashdeep1546/Portfolio)
 
 ---
 
@@ -43,31 +39,18 @@ This repository contains my personal developer portfolio, completely rebuilt wit
 <br>
 
 - **Frontend:** React 18, TypeScript, Tailwind CSS, Vite
-- **Animations:** Framer Motion, GSAP, React-Three-Fiber
 - **AI/ML:** PyTorch, TensorFlow, XGBoost, Scikit-learn, Gemini API
 - **Backend & DB:** Python, C++, SQL, PostgreSQL, MongoDB
 
 ---
 
-## 💡 Featured Projects
+## 💡 Featured Work
 
 ### 🧠 [NeuralDesk - AI Support Engine](https://github.com/Yashdeep1546/NeuralDesk-AI-Support-Engine)
 Conversational AI application using Gemini 2.5 Flash, combining semantic search and tool calling to answer questions from custom knowledge bases while preserving conversation context.
 
 ### 🛡️ [XGBoost FraudScanner](https://github.com/Yashdeep1546/XGBoost-FraudScanner)
 Credit card fraud detection application utilizing XGBoost, implementing scale posweight tuning to effectively classify highly imbalanced datasets. Achieved a 91.8% fraud detection rate.
-
-### 👁️ [Deep Learning Vision Classifiers](https://github.com/Yashdeep1546/AIML/tree/main/Projects/MNIST%20Digit%20Classifier)
-Scalable image classification pipelines for the MNIST dataset, implementing multi-layer feedforward neural networks across both PyTorch and TensorFlow/Keras.
-
----
-
-## 🏆 Achievements & Certifications
-
-- **Google ML Crash Course**
-- **NPTEL Cloud Computing Certification** *(Top 2% of candidates)*
-- **Smart India Hackathon**
-- **Software Engineering Virtual Internships:** JP Morgan Chase & Co. | Commonwealth Bank
 
 ---
 
