@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════
+   GLOBAL STYLES — Premium Dark Theme
+   ═══════════════════════════════════════ */
+
+@theme {
+  --color-dark: #0C0C0C;
+  --color-dark-card: #141414;
+  --color-dark-border: #1e1e1e;
+  --color-light-text: #D7E2EA;
+  --color-muted-text: #8a95a0;
+  --color-accent-purple: #7621B0;
+  --color-accent-magenta: #B600A8;
+  --color-accent-orange: #BE4C00;
+  --font-family-kanit: 'Kanit', sans-serif;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0C0C0C;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #0C0C0C;
+  color: #D7E2EA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+#root {
+  background-color: #0C0C0C;
+  overflow-x: clip;
+  min-height: 100vh;
+}
+
+.hero-heading {
+  font-family: 'Caveat', cursive;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 700 !important;
+  padding-right: 0.3em;
+  padding-bottom: 0.1em;
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Project Title Class ── */
+.project-title {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ── Solid Dark Button ── */
+.gradient-btn {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  background: #2A2A2A;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* ── Ghost / Outline Button ── */
+.ghost-btn {
+  border: 1px solid rgba(215, 226, 234, 0.3);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.ghost-btn:hover {
+  background: rgba(215, 226, 234, 0.08);
+  border-color: rgba(215, 226, 234, 0.5);
+  box-shadow: 0 0 15px rgba(215, 226, 234, 0.1);
+}
+
+/* ── Glass Card ── */
+.glass-card {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+}
+
+/* ── Animated border glow ── */
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02), transparent, rgba(255, 255, 255, 0.05));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.glow-border:hover::before {
+  opacity: 1;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Utility: no-scrollbar ── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
