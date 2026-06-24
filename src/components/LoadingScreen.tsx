@@ -7,16 +7,41 @@ export default function LoadingScreen() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      const images = Array.from(document.images);
+      const totalImages = images.length;
+      
+      if (totalImages === 0) {
+        // Initial minimum progress while React renders
+        setProgress(10);
+        return;
+      }
+      
+      const loadedImages = images.filter(img => img.complete).length;
+      const targetProgress = (loadedImages / totalImages) * 100;
+      
       setProgress(prev => {
-        if (prev >= 100) {
+        // Prevent progress bar from jumping backwards
+        const next = Math.max(prev, targetProgress);
+        if (next >= 100) {
           clearInterval(interval);
           setTimeout(() => setIsLoading(false), 400);
           return 100;
         }
-        return prev + Math.random() * 15 + 5;
+        return next;
       });
     }, 100);
-    return () => clearInterval(interval);
+
+    // Fallback to remove loading screen after max 8 seconds (if network issues occur)
+    const fallback = setTimeout(() => {
+      clearInterval(interval);
+      setProgress(100);
+      setTimeout(() => setIsLoading(false), 400);
+    }, 8000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(fallback);
+    };
   }, []);
 
   return (
