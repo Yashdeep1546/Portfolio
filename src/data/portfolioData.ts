@@ -323,7 +323,7 @@ export const socialLinks = [
    AVATAR IMAGES (for pseudo-3D effect)
    ═══════════════════════════════════════ */
 export const avatarImages = {
-  front: '/assets/avatar/front.png',
+  front: '/assets/avatar/front_cropped.png',
   frontStyled: '/assets/avatar/stylish front.png',
   left45: '/assets/avatar/left 45.png',
   leftSide: '/assets/avatar/left side 90.png',
